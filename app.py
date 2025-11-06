@@ -1,15 +1,48 @@
 import streamlit as st
 
-# 웹페이지의 제목을 설정합니다.
-st.title("🎉 드디어 성공! 나의 첫 웹페이지!")
+# --- Page Configuration (페이지 상단 탭 설정) ---
+st.set_page_config(
+    page_title="Team Project Log",
+    page_icon="🚀"
+)
 
-# 텍스트를 작성합니다.
-st.header("Streamlit에 오신 것을 환영합니다.")
-st.write("파이썬으로 정말 쉽게 웹을 만들 수 있네요!")
-st.write("오류도 잘 해결했습니다. 😎")
+# --- Main Content (메인 콘텐츠) ---
+st.title("🚀 Project Activity Log")
 
-# 버튼을 만들어 봅니다.
-if st.button("이 버튼을 눌러보세요"):
-    # 버튼이 눌리면 이모지를 뿌려줍니다.
-    st.balloons()
-    st.success("버튼 누르기 성공!")
+# (나중에 여기에 팀 주제를 적으세요)
+st.subheader("Project Theme: [Your AI Service Topic Here]")
+st.write("This page tracks our team's weekly progress.")
+st.divider() # 구분선
+
+# --- Week 1 ---
+st.header("Week 1: Planning & Setup")
+st.markdown("""
+* **Key Activities:**
+    * Initial idea brainstorming.
+    * Successfully set up the Streamlit environment.
+    * Deployed the first version of this web app!
+* **Challenges:**
+    * (Enter any challenges faced, e.g., "Python version conflicts")
+* **Next Steps:**
+    * (Enter plans for Week 2)
+""")
+
+# --- Week 2 ---
+st.header("Week 2: [Your Title for Week 2]")
+st.markdown("""
+* **Key Activities:**
+    * (Waiting for log update...)
+* **Notes:**
+    * (Waiting for log update...)
+""")
+
+# --- Week 3 (Template) ---
+st.header("Week 3: [Your Title for Week 3]")
+st.markdown("""
+* (Waiting for log update...)
+""")
+
+
+# --- Footer (꼬리말) ---
+st.divider()
+st.caption("Team: [Your Team Name Here]")
